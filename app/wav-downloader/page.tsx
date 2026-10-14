@@ -19,7 +19,7 @@ const webApp = {
 
 const faqs = [
   ["Is this the same as a WAV converter?", "No. A converter takes a file you already hold and rewrites it. This reads a public song link, finds the audio behind it and writes the WAV — you never download a file and then convert it."],
-  ["Is the WAV lossless?", "The WAV container and its PCM samples are lossless — there's no compression after this step. What came before it belongs to whoever made the song, and we can't undo that. We tell you the source bitrate rather than promising you a master."],
+  ["What is in the WAV file?", "PCM samples, written once, with no further compression after this step. What came before it belongs to whoever made the song, and we can't undo that. We tell you the source bitrate rather than promising you a master."],
   ["Why 48 kHz and not 44.1?", "That's what the source we measured carries. We write at the source rate instead of resampling it down to fit a preset."],
   ["Does this use my Suno download allowance?", "No. We never sign in to your account and never go through the download menu, so a WAV saved here costs you nothing on that side."],
   ["Can I do this to anyone's song?", "Use it on songs you made or audio you're permitted to keep. A downloadable file is not a licence."],
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     title: "WAV downloader — pull the WAV out of a public song link",
-    description: "48 kHz, DAW-ready, saved without a second lossy pass. Works on public Suno and Udio links.",
+    description: "48 kHz, DAW-ready, saved without a second lossy pass. Works on public Suno links.",
     url: "https://wavkeep.com/wav-downloader/",
   },
 };
@@ -60,7 +60,7 @@ export default function WavDownloaderPage() {
             describe={wavPageNote}
             hint={
               <p className="hint">
-                Public <code>suno.com/song/…</code> or <code>udio.com/song/…</code> links. Nothing is fetched until you press Inspect.
+                Public <code>suno.com/song/…</code> links. Nothing is fetched until you press Inspect.
               </p>
             }
             formats={[
@@ -76,7 +76,7 @@ export default function WavDownloaderPage() {
       <section>
         <div className="wrap">
           <h2>What you get, and what you don&apos;t</h2>
-          <p className="lead">A WAV is uncompressed samples. Whether it&apos;s worth 5× the size depends on what you&apos;re doing next.</p>
+          <p className="lead">A WAV is PCM samples. Whether it&apos;s worth 5× the size depends on what you&apos;re doing next.</p>
           <div className="grid quad">
             <article className="card"><span className="tag">DOES</span><h3>Drop into a session</h3><p>48 kHz stereo PCM, recognised by every DAW, video editor and mastering service without a detect step.</p></article>
             <article className="card"><span className="tag">DOES</span><h3>Keep the source honest</h3><p>We decode the delivered audio once and write it. The samples are the ones the source carries.</p></article>

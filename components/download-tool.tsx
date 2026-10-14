@@ -66,6 +66,24 @@ export function wavPageNote(data: InspectResponse): Note {
   return { text, kind: "ok" };
 }
 
+export function mp3PageNote(data: InspectResponse): Note {
+  const mp3 = data.files.mp3;
+  if (mp3.state === "available") {
+    const size = mp3.bytes ? ` · ${formatBytes(mp3.bytes)}` : "";
+    return { text: `MP3 is published for this song${size}. Saving it does not spend a Suno download.`, kind: "ok" };
+  }
+  if (mp3.state === "not_published") {
+    return {
+      text: "No MP3 file is published for this song, so that button stays hidden. Original, WAV and cover art are listed when they exist.",
+      kind: "",
+    };
+  }
+  if (mp3.state === "not_reachable") {
+    return { text: "An MP3 may exist for this song but isn't reachable right now. Try again in a moment.", kind: "err" };
+  }
+  return { text: "Could not read that song just now. Try again in a moment.", kind: "err" };
+}
+
 export function videoPageNote(data: InspectResponse): Note {
   const video = data.files.video.state;
   if (video === "not_published") {
@@ -275,7 +293,7 @@ export function DownloadTool({
       </div>
       {hint ?? (
         <p className="hint">
-          Any public link works — <code>suno.com/song/…</code>, a <code>suno.com/s/…</code> share link, or <code>udio.com/song/…</code>. Nothing is fetched until you press Inspect.
+          Any public link works — <code>suno.com/song/…</code>, a <code>suno.com/s/…</code> share link. Nothing is fetched until you press Inspect.
         </p>
       )}
 

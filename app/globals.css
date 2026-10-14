@@ -773,3 +773,12 @@ footer {
 .dl .dl-links { display: flex; flex-wrap: wrap; gap: 10px; margin: 16px 0 0; }
 .dl .dl-links a { border: 1px solid var(--line); border-radius: 999px; padding: 8px 15px; font-size: 14px; color: var(--ink); text-decoration: none; }
 .dl .dl-links a:hover { border-color: var(--brand); color: var(--brand); text-decoration: none; }
+
+.mp h1 { max-width: none; }
+.mp .mp-note { border: 1px solid var(--line); border-left: 4px solid var(--warn); background: var(--panel); border-radius: var(--radius); padding: 16px 18px; margin: 18px 0 0; font-size: 15px; line-height: 1.65; color: var(--dim); }
+.mp .mp-note b { color: var(--ink); }
+.mp .table-scroll { overflow-x: auto; }
+.mp table { width: 100%; border-collapse: collapse; margin: 18px 0; font-size: 15px; min-width: 560px; }
+.mp th, .mp td { border: 1px solid var(--line); padding: 11px 13px; text-align: left; vertical-align: top; }
+.mp th { background: var(--panel); font-size: 13px; letter-spacing: 0.3px; text-transform: uppercase; color: var(--dim); font-weight: 600; }
+.mp .mp-foot { font-size: 13.5px; color: var(--dim); margin: 28px 0 0; }

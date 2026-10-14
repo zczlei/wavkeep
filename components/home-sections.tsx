@@ -6,9 +6,10 @@ const tools = [
   ["/suno-video-downloader/", "Suno Video Downloader", "The MP4 lyric video, for songs that have one"],
   ["/suno-bulk-download/", "Bulk Download", "Keep a whole page or playlist of songs at once"],
   ["/suno-wav-downloader/", "Suno WAV Downloader", "Audio-only path for older songs"],
+  ["/suno-mp3-downloader/", "Suno MP3 Downloader", "The published MP3, without spending a download"],
   ["/suno-stems/", "Suno Stems", "What stems Suno actually gives you, and what it doesn't"],
   ["/suno-watermark/", "Watermark & download limits", "How Suno's caps work and what they don't cover"],
-  ["/udio-downloader/", "Udio Downloader", "The same flow for udio.com song links"],
+  ["/udio-downloader/", "Udio Downloader", "Why a udio.com link can't fetch a file"],
 ] as const;
 
 const reasons = [

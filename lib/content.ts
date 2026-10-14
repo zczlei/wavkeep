@@ -25,7 +25,7 @@ export const faqs: { q: string; a: string; link?: { phrase: string; href: string
   },
   {
     q: "Does it work for Udio songs too?",
-    a: "Yes, on the page built for it — Udio downloader. The inspection and the file list differ per platform, so they are kept apart on purpose.",
+    a: "No. We have not built a Udio fetcher. The Udio downloader page explains what was switched off and why a link can't fetch a file.",
     link: { phrase: "Udio downloader", href: "/udio-downloader/" },
   },
 ];

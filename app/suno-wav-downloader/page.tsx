@@ -91,7 +91,7 @@ export default function SunoWavDownloaderPage() {
             describe={wavPageNote}
             hint={
               <p className="hint">
-                Public <code>suno.com/song/…</code> or <code>udio.com/song/…</code> links. Nothing is fetched until you press Inspect.
+                Public <code>suno.com/song/…</code> links. Nothing is fetched until you press Inspect.
               </p>
             }
             formats={[
@@ -146,7 +146,7 @@ export default function SunoWavDownloaderPage() {
             </tbody>
           </table>
           <p className="lead" style={{ marginTop: 14 }}>
-            A WAV holds uncompressed samples, so the file is large and every tool reads it. It does <b>not</b> put back
+            A WAV holds PCM samples, so the file is large and every tool reads it. It does <b>not</b> put back
             anything the compression removed. Anyone telling you their Suno WAV sounds better than the source is selling you a container.
           </p>
         </div>
@@ -171,8 +171,8 @@ export default function SunoWavDownloaderPage() {
             <p>No, and be suspicious of anything that says yes. The songs we measured arrive as AAC audio at 48 kHz, around 194 kbps. Writing that to WAV changes the container, not the content. The WAV is the better file to <b>edit</b>; it isn&apos;t a better recording.</p>
           </details>
           <details>
-            <summary>Is it lossless?</summary>
-            <p>The WAV container and its PCM samples are lossless — nothing is thrown away after this step. What happened before it was decided upstream, and no converter can undo that. That&apos;s why we publish the source bitrate instead of a promise.</p>
+            <summary>What does the WAV hold?</summary>
+            <p>PCM samples, written once, with nothing compressed again after this step. What happened before it was decided upstream, and no converter can undo that. That&apos;s why we publish the source bitrate instead of a promise.</p>
           </details>
           <details>
             <summary>Why 48 kHz and not 44.1?</summary>
