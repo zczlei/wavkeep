@@ -36,6 +36,7 @@ export function SiteFooter() {
               <li><Link href="/privacy/">Privacy</Link></li>
               <li><Link href="/terms/">Terms</Link></li>
               <li><Link href="/dmca/">DMCA</Link></li>
+              <li><Link href="/disclaimer/">Disclaimer</Link></li>
             </ul>
           </div>
         </div>

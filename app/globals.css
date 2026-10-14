@@ -753,3 +753,23 @@ footer {
 @media (max-width: 720px) {
   .ct h1 { max-width: none; }
 }
+
+.dl h1 { max-width: none; }
+.dl section { padding: 0; border-top: 0; }
+.dl .dl-lede { font-size: clamp(16px, 2.4vw, 19px); color: var(--dim); max-width: 66ch; }
+.dl .dl-sec { border: 1px solid var(--line); border-radius: var(--radius); background: var(--panel); padding: 20px 24px; margin: 16px 0; }
+.dl .dl-sec h2 { font-size: clamp(18px, 2.6vw, 22px); margin: 0 0 10px; letter-spacing: -0.3px; }
+.dl .dl-sec p { margin: 0 0 12px; font-size: 15.5px; line-height: 1.65; }
+.dl .dl-sec p:last-child { margin-bottom: 0; }
+.dl .dl-sec ul, .dl .dl-sec ol { margin: 0 0 12px; padding-left: 22px; }
+.dl .dl-sec li { margin: 0 0 8px; font-size: 15.5px; line-height: 1.6; color: var(--dim); }
+.dl .dl-sec li:last-child { margin-bottom: 0; }
+.dl .dl-sec b { color: var(--ink); }
+.dl .dl-sec.key { border-left: 4px solid var(--brand); }
+.dl .dl-sec.warn { border-left: 4px solid var(--warn); }
+.dl .dl-quote { font-family: var(--mono); font-size: 14px; color: var(--dim); border-left: 3px solid var(--line); padding-left: 14px; margin: 12px 0; }
+.dl .dl-mail { font-family: var(--mono); font-size: 14px; color: var(--brand); word-break: break-all; }
+.dl .dl-foot { font-size: 13.5px; color: var(--dim); margin: 34px 0 8px; padding-top: 14px; border-top: 1px solid var(--line); }
+.dl .dl-links { display: flex; flex-wrap: wrap; gap: 10px; margin: 16px 0 0; }
+.dl .dl-links a { border: 1px solid var(--line); border-radius: 999px; padding: 8px 15px; font-size: 14px; color: var(--ink); text-decoration: none; }
+.dl .dl-links a:hover { border-color: var(--brand); color: var(--brand); text-decoration: none; }
