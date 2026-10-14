@@ -1,8 +1,12 @@
 node_modules
 .next
+.open-next
+.wrangler
 out
 .DS_Store
 ._*
 *.log
+.env*.local
 next-env.d.ts
 tsconfig.tsbuildinfo
+cloudflare-env.d.ts
