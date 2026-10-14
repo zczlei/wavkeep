@@ -7,6 +7,14 @@ export const metadata: Metadata = {
     "How to report copyright infringement on wavkeep.com, our designated agent, what happens after a valid notice, and how to file a counter-notification.",
   alternates: { canonical: "https://wavkeep.com/dmca/" },
   robots: { index: true, follow: true },
+  openGraph: {
+    type: "website",
+    siteName: "WAV Keep",
+    title: "DMCA and Copyright Policy | WAV Keep",
+    description:
+      "How to report copyright infringement on wavkeep.com, our designated agent, what happens after a valid notice, and how to file a counter-notification.",
+    url: "https://wavkeep.com/dmca/",
+  },
 };
 
 export default function DmcaPage() {

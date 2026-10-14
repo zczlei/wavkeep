@@ -3,9 +3,9 @@ import Link from "next/link";
 import { DownloadTool, mp3PageNote } from "@/components/download-tool";
 
 const email = "tinaliu660@gmail.com";
-const title = "Suno MP3 Downloader — Save Your Suno Songs as MP3 Without Using a Download | WAV Keep";
+const title = "Suno MP3 Downloader — Save MP3 Without a Download";
 const description =
-  "Free Suno accounts already get an MP3 — the scarce thing is the count: 7 downloads for life, 20 a month on Pro. Paste a public song link and save the MP3 without touching your account or its download menu.";
+  "Free Suno accounts already get MP3 — the scarce thing is the count. Paste a public link and save the MP3 without touching your account's download menu.";
 
 const faqs = [
   [
@@ -97,8 +97,8 @@ export const metadata: Metadata = {
   openGraph: {
     type: "article",
     siteName: "WAV Keep",
-    title: "Suno MP3 downloader — the MP3 was never the hard part",
-    description: "Suno's free plan already hands you an MP3. What it caps is how many times. Save the file from a public song link instead.",
+    title,
+    description,
     url: "https://wavkeep.com/suno-mp3-downloader/",
   },
   twitter: { card: "summary" },

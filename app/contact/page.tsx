@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 const email = "tinaliu660@gmail.com";
-const title = "Contact WAV Keep — support, copyright notices, abuse | WAV Keep";
+const title = "Contact WAV Keep — support, copyright, abuse";
 const description =
   "Reach WAV Keep by email for download problems, copyright notices, and misuse. What to include so we can actually help, and what we can't answer.";
 
@@ -53,7 +53,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     siteName: "WAV Keep",
-    title: "Contact WAV Keep",
+    title,
     description: "Support, copyright notices and abuse reports — which subject to use, and what to include in the first message.",
     url: "https://wavkeep.com/contact/",
   },

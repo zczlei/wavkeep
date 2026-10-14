@@ -7,6 +7,14 @@ export const metadata: Metadata = {
     "Privacy policy for WAV Keep. The site reads a public song link you paste, does not ask you to sign in, and does not keep the files you save.",
   alternates: { canonical: "https://wavkeep.com/privacy/" },
   robots: { index: true, follow: true },
+  openGraph: {
+    type: "website",
+    siteName: "WAV Keep",
+    title: "Privacy Policy | WAV Keep",
+    description:
+      "Privacy policy for WAV Keep. The site reads a public song link you paste, does not ask you to sign in, and does not keep the files you save.",
+    url: "https://wavkeep.com/privacy/",
+  },
 };
 
 export default function PrivacyPage() {

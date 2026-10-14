@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 
-const title = "Suno Watermark Remover? What Suno Actually Adds to Every Song | WAV Keep";
+const title = "Suno Watermark Remover? What Suno Adds to Songs | WAV Keep";
 const description =
-  "Suno watermarks and fingerprints every song it generates — the same announcement that introduced download limits. Here's what that mark is, why a remover can't take it out without damaging the audio, and what we do instead.";
+  "Suno watermarks and fingerprints every song it makes — the same change that brought download limits. What the mark is, and why a remover can't take it out.";
 
 const articleLd = {
   "@context": "https://schema.org",
@@ -69,8 +69,8 @@ export const metadata: Metadata = {
   openGraph: {
     type: "article",
     siteName: "WAV Keep",
-    title: "Suno Watermark Remover? What Suno Actually Adds to Every Song",
-    description: "The mark is inside the audio, not on top of it. What that means for tools that promise to remove it — and for your own songs.",
+    title,
+    description,
     url: "https://wavkeep.com/suno-watermark/",
     publishedTime: "2026-10-14",
     modifiedTime: "2026-10-14",

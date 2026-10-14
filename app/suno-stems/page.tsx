@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { StemsFileList } from "@/components/stems-file-list";
 
-const title = "Suno Stems: How to Get Them, What Plan, and What Costs a Download | WAV Keep";
+const title = "Suno Stems: How to Get Them, What Plan | WAV Keep";
 const description =
-  "Suno's own help pages say it: stem separation is on Pro, but saving each stem as its own file runs through Suno Studio on Premier. Plus the rule nobody reads — stems share one song's download, they don't each cost one.";
+  "Stem separation is on Pro; saving each stem as its own file runs through Studio on Premier. And stems share one song's download — they don't each cost one.";
 
 const articleLd = {
   "@context": "https://schema.org",
@@ -84,8 +84,8 @@ export const metadata: Metadata = {
   openGraph: {
     type: "article",
     siteName: "WAV Keep",
-    title: "Suno Stems: How to Get Them, What Plan, and What Costs a Download",
-    description: "Two tiers, one quota rule, and why no downloader can hand you Suno's stems. Quoted from Suno's own help pages.",
+    title,
+    description,
     url: "https://wavkeep.com/suno-stems/",
     publishedTime: "2026-10-14",
     modifiedTime: "2026-10-14",

@@ -7,9 +7,9 @@ function mail(subject: string) {
   return `mailto:${email}?subject=${encodeURIComponent(subject)}`;
 }
 
-const title = "Disclaimer — what WAV Keep is and isn't responsible for | WAV Keep";
+const title = "Disclaimer — what WAV Keep is responsible for";
 const description =
-  "WAV Keep saves the files a public Suno song page already publishes. No warranties, no control over platform changes, no watermark removal, no access to unpublished songs, and no legal advice. What to report where.";
+  "WAV Keep saves the files a public Suno song page already publishes. No warranties, no control over platform changes, and no legal advice.";
 
 const pageLd = {
   "@context": "https://schema.org",
@@ -79,8 +79,8 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     siteName: "WAV Keep",
-    title: "WAV Keep — Disclaimer",
-    description: "As-is tool, no warranties. What we can't control, what we won't do, and whose rights your files are.",
+    title,
+    description,
     url: "https://wavkeep.com/disclaimer/",
   },
   twitter: { card: "summary" },

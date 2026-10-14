@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { BulkQueue } from "@/components/bulk-queue";
 
-const title = "Suno Bulk Download — Export Your Own Songs in One Go | WAV Keep";
+const title = "Suno Bulk Download — Export Your Songs in One Go | WAV Keep";
 const description =
-  "Paste a Suno playlist or profile link and take your own songs out one after another — WAV, MP3, cover art and the published video where a song has one. Nothing re-encoded, and it doesn't spend a Suno download.";
+  "Paste a Suno playlist or profile link and save your songs one after another — WAV, MP3, cover art, and the published video where a song has one.";
 
 const webApp = {
   "@context": "https://schema.org",
@@ -71,9 +71,8 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     siteName: "WAV Keep",
-    title: "Suno Bulk Download — Export Your Own Songs in One Go",
-    description:
-      "A playlist queue for your own Suno songs: inspect once, keep each track as it is delivered — WAV, MP3, cover art, and the video where one is published.",
+    title,
+    description,
     url: "https://wavkeep.com/suno-bulk-download/",
   },
   twitter: { card: "summary_large_image" },

@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { UdioDiagnostic } from "@/components/udio-diagnostic";
 
-const title = "Udio Downloader Not Working? Why Udio Disabled Downloads | WAV Keep";
+const title = "Udio Downloader Not Working? The Official Reason | WAV Keep";
 const description =
-  "Udio turned off downloads of audio, video and stems after its Universal Music Group deal — and hasn't logged a change since. The official statement, what still works, and why no Udio downloader can hand you a file.";
+  "Udio turned off downloads of audio, video and stems after the Universal Music Group deal. The official reason a downloader can't hand you a file.";
 
 const articleLd = {
   "@context": "https://schema.org",
@@ -69,9 +69,8 @@ export const metadata: Metadata = {
   openGraph: {
     type: "article",
     siteName: "WAV Keep",
-    title: "Udio Downloader Not Working? Why Udio Disabled Downloads",
-    description:
-      'Official: "downloading of audio, video, and stems has been disabled." What still works, and what every "Udio downloader" is really doing.',
+    title,
+    description,
     url: "https://wavkeep.com/udio-downloader/",
     publishedTime: "2026-10-14",
     modifiedTime: "2026-10-14",

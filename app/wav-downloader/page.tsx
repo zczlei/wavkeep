@@ -4,7 +4,7 @@ import { DownloadTool, wavPageNote } from "@/components/download-tool";
 
 const title = "WAV Downloader — Download WAV Files and Suno Songs | WAV Keep";
 const description =
-  "Paste a public song link and keep the WAV — 48 kHz, opens straight in your DAW. Also saves the file as delivered, MP3 and cover art. No sign-in, no download quota spent.";
+  "Paste a public song link and keep the WAV — 48 kHz, opens straight in your DAW. Also saves the file as delivered, MP3 and cover art.";
 
 const webApp = {
   "@context": "https://schema.org",
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     title: "WAV downloader — pull the WAV out of a public song link",
-    description: "48 kHz, DAW-ready, saved without a second lossy pass. Works on public Suno links.",
+    description: "Paste a public song link and keep the WAV — 48 kHz, opens straight in your DAW. Also saves the file as delivered, MP3 and cover art.",
     url: "https://wavkeep.com/wav-downloader/",
   },
 };

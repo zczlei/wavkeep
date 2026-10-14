@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 
-const title = "About WAV Keep — what this tool does, and what it won't claim | WAV Keep";
+const title = "About WAV Keep — what we do, what we won't claim";
 const description =
-  "WAV Keep keeps the audio file a public Suno song page already serves. Who runs it, how the fetch works, and the promises we deliberately refuse to make — no watermark removal, no stems, no Udio files.";
+  "WAV Keep keeps the audio a public Suno song page already serves. Who runs it, how the fetch works, and which promises this page refuses to make.";
 
 const aboutLd = {
   "@context": "https://schema.org",
@@ -65,8 +65,8 @@ export const metadata: Metadata = {
   openGraph: {
     type: "article",
     siteName: "WAV Keep",
-    title: "About WAV Keep",
-    description: "What WAV Keep does, how it does it, and what it won't promise. Not affiliated with Suno or Udio.",
+    title,
+    description,
     url: "https://wavkeep.com/about/",
   },
   twitter: { card: "summary_large_image" },

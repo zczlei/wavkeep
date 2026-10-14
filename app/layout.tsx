@@ -13,18 +13,18 @@ const outfit = Outfit({
 export const metadata: Metadata = {
   metadataBase: new URL("https://wavkeep.com"),
   title: {
-    default: "Suno Downloader — Save Your Own Suno Songs as WAV, MP3 or MP4 | WAV Keep",
+    default: "Suno Downloader — Save WAV, MP3, Cover Art | WAV Keep",
     template: "%s | WAV Keep",
   },
   description:
-    "Paste a public Suno song link and keep the file Suno already published — WAV, MP3, cover art and, for songs that have one, the vertical lyric video. Nothing re-encoded, and it doesn't cost you a Suno download.",
+    "Paste a public Suno link and keep what it already publishes — WAV, MP3, cover art, and the lyric video when there is one. No sign-in, no download spent.",
   applicationName: "WAV Keep",
   robots: { index: true, follow: true },
   openGraph: {
     type: "website",
     siteName: "WAV Keep",
-    title: "Suno Downloader — save the file Suno published for your song",
-    description: "Paste a public Suno link. Keep WAV, MP3, cover art and the published lyric video — without spending a download.",
+    title: "Suno Downloader — Save WAV, MP3, Cover Art | WAV Keep",
+    description: "Paste a public Suno link and keep what it already publishes — WAV, MP3, cover art, and the lyric video when there is one. No sign-in, no download spent.",
     url: "https://wavkeep.com/",
   },
 };

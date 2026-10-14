@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { DownloadTool, wavPageNote } from "@/components/download-tool";
 
-const title = "Suno to WAV — Download Suno Songs as WAV Files (48 kHz) | WAV Keep";
+const title = "Suno to WAV — Download Songs as 48 kHz WAV | WAV Keep";
 const description =
-  "Paste a public Suno song link and get a 48 kHz WAV written from the audio your song page already publishes — the format Suno keeps behind Pro and Premier. No sign-in, no download button used.";
+  "Paste a public Suno song link and get a 48 kHz WAV from the audio that page already publishes — the format Suno keeps behind Pro and Premier.";
 
 const webApp = {
   "@context": "https://schema.org",
@@ -61,8 +61,8 @@ export const metadata: Metadata = {
   robots: { index: true, follow: true, "max-image-preview": "large" },
   openGraph: {
     type: "website",
-    title: "Suno to WAV — save your Suno song as a 48 kHz WAV",
-    description: "The WAV button isn't on every Suno plan or every device. Paste the song link and write the WAV yourself, from the file the song page publishes.",
+    title,
+    description,
     url: "https://wavkeep.com/suno-wav-downloader/",
   },
 };

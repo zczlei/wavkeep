@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { DownloadTool, videoPageNote } from "@/components/download-tool";
 
-const title = "Suno Video Downloader — Save the MP4 Suno Published | WAV Keep";
+const title = "Suno Video Downloader — Save the Published MP4 | WAV Keep";
 const description =
-  "Paste a public Suno link. If that song has a published video file, you get it exactly as delivered — vertical 9:16, cover and lyrics on screen. If it doesn't, we tell you before you click.";
+  "Paste a public Suno link. If that song publishes a video, you get it as delivered — vertical 9:16, with the cover and lyrics already on screen.";
 
 const webApp = {
   "@context": "https://schema.org",
@@ -44,8 +44,8 @@ export const metadata: Metadata = {
   robots: { index: true, follow: true, "max-image-preview": "large" },
   openGraph: {
     type: "website",
-    title: "Suno video downloader — the video Suno published, not a re-render",
-    description: "Vertical 9:16 with your cover and lyrics. Available for the songs that have it; named plainly for the ones that don't.",
+    title,
+    description,
     url: "https://wavkeep.com/suno-video-downloader/",
   },
 };

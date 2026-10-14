@@ -4,9 +4,17 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: { absolute: "Terms of Service | WAV Keep" },
   description:
-    "Terms of service for WAV Keep — an independent tool that saves files a public Suno or Udio song page already publishes. Not affiliated with Suno Inc. or Udio.",
+    "Terms of service for WAV Keep — an independent tool that saves files a public Suno or Udio song page already publishes.",
   alternates: { canonical: "https://wavkeep.com/terms/" },
   robots: { index: true, follow: true },
+  openGraph: {
+    type: "website",
+    siteName: "WAV Keep",
+    title: "Terms of Service | WAV Keep",
+    description:
+      "Terms of service for WAV Keep — an independent tool that saves files a public Suno or Udio song page already publishes.",
+    url: "https://wavkeep.com/terms/",
+  },
 };
 
 export default function TermsPage() {
