@@ -32,6 +32,9 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={outfit.variable}>
+      <head>
+        <script src="https://analytics.ahrefs.com/analytics.js" data-key="PQDOsycszIh2VyT01ARkbg" async />
+      </head>
       <body>
         <div className="site">
           <SiteHeader />
